@@ -39,7 +39,7 @@
 			</div>
 		</header>
 		<main>
-			<div class="products">
+			<div class="products"> 
 				{{products.length ? '' : 'Нет данных'}}
 				<div class="product-item" :data-id="product.id_product" v-for="product of products" :key="product.id_product">
 					<img :src="imgCatalog" alt="Some img">
