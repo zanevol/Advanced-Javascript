@@ -7,14 +7,14 @@ const app = new Vue({
 		products: [],
 		imgCatalog: 'https://via.placeholder.com/200x150',
 		searchLine: '',
-		isVisibleCart: false,
+		showError: false
 	},
 	methods: {
 		getJson(url) {
 			return fetch(url)
 				.then(result => result.json())
 				.catch(error => {
-					console.log(error);
+					this.showError = true;
 				})
 		},
 		addProduct(product) {
