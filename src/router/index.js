@@ -9,7 +9,7 @@ const routes = [
 	{
 		path: '/',
 		name: 'catalog',
-		component: vCatalog
+		component: vCatalog,
 
 	},
 	{
